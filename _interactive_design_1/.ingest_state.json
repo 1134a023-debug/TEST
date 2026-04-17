@@ -1,0 +1,74 @@
+{
+  "scripts\\consolidate_memory.py": {
+    "mtime": 1773371645.6748402,
+    "size": 3259
+  },
+  "scripts\\ingest.py": {
+    "mtime": 1773371645.6690762,
+    "size": 8129
+  },
+  "scripts\\query.py": {
+    "mtime": 1773371645.671739,
+    "size": 3836
+  },
+  "scripts\\system\\health_check.py": {
+    "mtime": 1773371645.6798239,
+    "size": 4798
+  },
+  "docs\\DOMAIN_CONTEXT.md": {
+    "mtime": 1773371645.6913843,
+    "size": 499
+  },
+  "docs\\USER_GUIDE_EN.md": {
+    "mtime": 1773371645.696627,
+    "size": 643
+  },
+  "docs\\USER_GUIDE_ZH.md": {
+    "mtime": 1773371645.6946256,
+    "size": 651
+  },
+  "AGENTS.md": {
+    "mtime": 1774500186.591167,
+    "size": 14290
+  },
+  "docker-compose.yml": {
+    "mtime": 1773371645.632792,
+    "size": 309
+  },
+  "pyproject.toml": {
+    "mtime": 1773371645.625447,
+    "size": 507
+  },
+  "SETUP.md": {
+    "mtime": 1773371645.6229327,
+    "size": 1541
+  },
+  "tests\\test_basic.py": {
+    "mtime": 1773371645.6859753,
+    "size": 109
+  },
+  ".agents\\reflections\\2026-03-21.md": {
+    "mtime": 1774080341.257779,
+    "size": 1851
+  },
+  ".agents\\reflections\\2026-03-23.md": {
+    "mtime": 1774197279.1493223,
+    "size": 2239
+  },
+  ".agents\\reflections\\2026-03-25.md": {
+    "mtime": 1774453313.6533177,
+    "size": 2058
+  },
+  ".agents\\reflections\\2026-03-26.md": {
+    "mtime": 1774500175.4837575,
+    "size": 937
+  },
+  ".agents\\workflows\\end.md": {
+    "mtime": 1773371645.6537168,
+    "size": 1907
+  },
+  ".agents\\workflows\\start.md": {
+    "mtime": 1773371645.651092,
+    "size": 1482
+  }
+}

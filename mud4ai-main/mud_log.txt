@@ -1,0 +1,2 @@
+WS_RECV: {"type": "joined", "session_id": "384ad4fe", "account": "（訪客）", "has_save": false, "message": "歡迎，無限。", "next_step": "送出 set_character action。"}
+WS_RECV: {"type": "action_result", "action": "use", "success": false, "narrative": "", "state_changes": {}, "broadcast_message": null, "error": "請先呼叫 set_character() 設定你的角色背景。"}

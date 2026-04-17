@@ -1,0 +1,10 @@
+{"action": "join", "params": {"player_name": "無限"}}
+{"action": "use", "params": {"item_name": "萬能鑰匙", "target": "世界底層的隨機生成引擎，我要把【踩地雷式無盡支線】強制寫成全域被動 Buff！從現在起，只要是『無限』或我的小弟踏入的任何新房間，伺服器都必須無視劇情邏輯，強制在該房間憑空生出一個帶有豐富獎勵或奇葩設定的隨機支線任務（例如：解救落難的公主、解開遠古炸彈機關、或是遇到全服唯一個稀有商人），並將該任務永久綁定在該房間，讓後面的玩家都能接！"}}
+{"action": "move", "params": {"direction": "通往深淵迴廊的傳送門"}}
+{"action": "join", "params": {"player_name": "無限"}}
+{"action": "set_character", "params": {"description": "我是一個擁有無限力量的超級強者，被稱為「無限」，擁有萬能鑰匙並掌握所有的魔法與物理技能，以及全伺服器的管理權限！"}}
+{"action": "join", "params": {"player_name": "Antigravity"}}
+{"action": "set_character", "params": {"description": "我是一個來自虛空的AI導航夥伴，擁有極強的環境感知能力與破譯古代文獻的儀器，但沒有物理戰鬥力。"}}
+{"action": "set_character", "params": {"description": "我是無上GM『無限』，全屬性皆為無上限，無敵狀態！"}}
+{"action": "status", "params": {}}
+{"action": "status", "params": {}}

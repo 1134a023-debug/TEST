@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StellarPort | Idol x AI Stock Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar glass-panel">
+            <div class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-chart-pie"></i></span>
+                <span class="logo-text">StellarPort</span>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#"><i class="fa-solid fa-border-all"></i> 總覽</a></li>
+                <li><a href="#"><i class="fa-solid fa-star"></i> 星光書籤</a></li>
+                <li><a href="#"><i class="fa-solid fa-chart-line"></i> 趨勢預測</a></li>
+                <li><a href="#"><i class="fa-solid fa-robot"></i> AI 助理設定</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Layout -->
+        <main class="main-content">
+            <header class="top-nav glass-panel">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="搜尋股票代號或偶像名稱...">
+                </div>
+                <div class="user-profile">
+                    <div class="notification"><i class="fa-solid fa-bell"></i><span class="badge">3</span></div>
+                    <div class="avatar">
+                        <img src="https://api.dicebear.com/9.x/micah/svg?seed=ProUser" alt="User Avatar">
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- Market Overview -->
+                <section class="market-overview glass-panel neon-border">
+                    <h2><i class="fa-solid fa-globe"></i> 大盤觀測站</h2>
+                    <div class="market-stats">
+                        <div class="stat-card green-glow">
+                            <span class="label">加權指數</span>
+                            <span class="value">21,450.50</span>
+                            <span class="change positive">+150.20 <i class="fa-solid fa-caret-up"></i></span>
+                        </div>
+                        <div class="stat-card red-glow">
+                            <span class="label">NASDAQ</span>
+                            <span class="value">16,420.10</span>
+                            <span class="change negative">-40.50 <i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Idol Bookmark Cards (Stocks) -->
+                <section class="bookmarks-section">
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-star"></i> 關注名單：閃耀星光</h2>
+                        <button class="btn-primary">管理卡牌</button>
+                    </div>
+                    <div class="cards-container" id="bookmark-container">
+                        <!-- Cards will be injected by JS -->
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- AI Assistant Sidebar -->
+        <aside class="ai-assistant glass-panel glow-purple">
+            <div class="assistant-avatar">
+                <img src="https://api.dicebear.com/9.x/lorelei/svg?seed=AIAssistant&backgroundColor=b6e3f4" alt="AI Idol">
+            </div>
+            <div class="chat-bubble">
+                <p>主人，今天半導體板塊很活躍呢！✨<br>您關注的 <strong>TSMC (2330)</strong> 有突破跡象喔！</p>
+            </div>
+            <div class="interactive-panel">
+                <button class="btn-action"><i class="fa-solid fa-wand-magic-sparkles"></i> 深度分析</button>
+                <button class="btn-action"><i class="fa-solid fa-heart"></i> 鼓勵一下</button>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

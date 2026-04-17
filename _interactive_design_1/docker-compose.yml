@@ -1,0 +1,14 @@
+services:
+  workspace:
+    container_name: -interactive-design-1-workspace
+    build: .
+    image: -interactive-design-1-env
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: sleep infinity
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 2G

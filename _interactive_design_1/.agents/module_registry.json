@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-03-13",
+  "generator_version": "2.0.0",
+  "project_name": " interactive design 1",
+  "deployment_scope": "local",
+  "domain": "general",
+  "active_modules": [
+    "core_agents",
+    "core_workflows",
+    "infra_docker",
+    "mem_lancedb",
+    "ci_python_tools"
+  ],
+  "scripts": {
+    "mem_lancedb": {
+      "ingest": "scripts/ingest.py",
+      "query": "scripts/query.py",
+      "consolidate": "scripts/consolidate_memory.py"
+    }
+  },
+  "health_check": "scripts/system/health_check.py",
+  "workflows": {
+    "start": ".agents/workflows/start.md",
+    "end": ".agents/workflows/end.md"
+  }
+}

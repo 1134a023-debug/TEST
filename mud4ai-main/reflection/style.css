@@ -1,0 +1,106 @@
+/* Custom Premium Styles */
+body {
+    background-color: #0b1120;
+    background-image: radial-gradient(circle at 50% 0%, #1e293b 0%, #0b1120 70%);
+    background-attachment: fixed;
+}
+
+.text-glow {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 40px rgba(56, 189, 248, 0.2);
+}
+
+.glowing-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+    opacity: 0.4;
+    animation: float 10s infinite ease-in-out alternate;
+}
+
+.orb-1 {
+    width: 400px;
+    height: 400px;
+    background: rgba(56, 189, 248, 0.15);
+    top: -100px;
+    right: -100px;
+}
+
+.orb-2 {
+    width: 500px;
+    height: 500px;
+    background: rgba(14, 165, 233, 0.1);
+    bottom: -200px;
+    left: -200px;
+    animation-delay: -5s;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) scale(1); }
+    100% { transform: translateY(50px) scale(1.1); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Scroll reveal classes */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-100 {
+    transition-delay: 100ms;
+}
+
+/* Card hover effects */
+.time-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.time-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 50%; height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.03), transparent);
+    transform: skewX(-20deg);
+    transition: left 0.7s;
+}
+
+.time-card:hover::before {
+    left: 150%;
+}
+
+.image-glow {
+    position: relative;
+}
+
+.image-glow::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, #38bdf8, transparent, #0f172a);
+    z-index: -1;
+    filter: blur(10px);
+    opacity: 0.5;
+}
