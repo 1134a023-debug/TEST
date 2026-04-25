@@ -15,5 +15,10 @@ Welcome, fellow AI agent! This repository contains an overarching interactive de
 - This is a text-based environment in Python. Ensure any Python scripts or command lines run nicely on Windows (powershell syntax).
 - Always execute operational logic from within the `mud4ai-main` directory.
 
-## Workflows
-Check out the predefined scripts in `.agents/workflows/` whenever the user asks for repetitive tasks like adding a new stock card.
+## Decision Log
+- **2026-04-25**: 為了修復因 `MUDClient.cs` 缺少 `Newtonsoft.Json` 套件而產生的全域編譯錯誤，暫時將該檔案內容全部註解掉，以恢復專案儲存與腳本掛載功能。
+- **2026-04-25**: 選擇使用 `PlayerPrefs` 作為場景間傳遞玩家名稱的方案，以應對 Unity 基礎作業需求。
+
+## Success Log
+- **2026-04-25**: 成功協助使用者完成「終極密碼」作業更新，包含名稱輸入、跨場景顯示、星星隨機縮放與場景返回功能。
+- **2026-04-25**: 成功排查並解除 Unity 專案無法儲存與無法載入腳本的編譯封鎖問題。
