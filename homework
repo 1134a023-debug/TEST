@@ -1,0 +1,9 @@
+射擊遊戲設計05 地形地物.pdf 射擊遊戲設計06 Character移動控制.pdf 
+坦克移動控制
+這次的作業教我如何做這兩個pdf的內容
+
+=== 已為您準備好作業所需的檔案 ===
+1. 坦克控制 C# 腳本：[Player2.cs](file:///C:/新增資料夾/OneDrive/Desktop/_interactive_design_1_Blueprint_OS/op/Player2.cs)
+2. 詳細製作步驟說明書：[教學說明書_坦克地形.md](file:///C:/新增資料夾/OneDrive/Desktop/_interactive_design_1_Blueprint_OS/op/教學說明書_坦克地形.md)
+
+請依照說明書中的步驟在 Unity 中設定 Terrain (地形) 與 Tank (坦克) 物件層級，並將 Player2.cs 腳本掛載到坦克本體上進行變數拖曳設定，即可完成作業！，然後目前作業做到坦克的控制

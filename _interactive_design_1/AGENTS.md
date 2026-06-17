@@ -59,6 +59,7 @@
 - **2026-03-27**: Implemented "Semantic Manifestation" (authority-based `set_character` claims) to force-trigger the Ancient Altar node.
 
 ## Success Log
+- **2026-04-30**: 成功協助使用者完成保齡球碰撞遊戲作業，包含完整的腳本分離、計分系統 (Vector3.Angle 判定)，並排除 Canvas 尺寸認知差異與 TextMeshPro 中文亂碼問題。
 - **2026-03-27**: Successfully detected **"zhai_zhai_gamer"** in the live world (at Ancient Altar).
 - **2026-03-27**: Mapped the world's frontier to the **"Sealed Land"** (Dungeon Depths) via the 5-hero squad.
 - **2026-03-27**: Designed the **"Convergence of Six Crowns"** side quest blueprint.
@@ -68,7 +69,10 @@
 > 💡 **Quick Search**: Use `grep -i '<scope>' AGENTS.md` to locate decisions by scope (e.g., `infra`, `security`, `web`).
 
 | Date | Scope | Decision | Confidence | Provenance | Review_after | Status | Conflict_with | Superseded_by |
+| Date | Scope | Decision | Confidence | Provenance | Review_after | Status | Conflict_with | Superseded_by |
 |---|---|---|---|---|---|---|---|---|
+| 2026-04-30 | unity | Reverted score UI to Legacy Text to bypass TextMeshPro Chinese font compilation for homework simplicity. | high | Session_Action | 2026-05 | Active | TMP default | - |
+| 2026-04-30 | unity | Used Vector3.Angle for pin tilt detection instead of collision triggers for robust scoring. | high | Session_Action | - | Active | Physics Trigger | - |
 | 2026-03-30 | infra | Blocked lancedb native installation on Windows; documented strict Docker execution requirement. | high | Session_Action | - | Active | Native Windows setup | - |
 | 2026-03-26 | mud4ai | Authored and unified a 20-chapter epic chronicle (150+ words per section) based on extreme user detail requirements, providing the definitive narrative of the conquest. | high | Session_Action | - | Active | Standard short reflections | - |
 | 2026-03-26 | mud4ai | Implemented `login_all_accounts.py` as a unified, concurrent entry point for all 5 legendary accounts, mapping token keys to character names for A2A API consistency. | high | Session_Action | - | Active | Single-client scripts | - |
@@ -202,3 +206,6 @@ When making L2+ decisions, append to the Decision Log table below:
 - [ ] Refactor multiple single-purpose mud4ai-main Python scripts into a unified `mud_client_sdk`.
 - [ ] Sync environment state with `SETUP.md`.
 - [ ] Audit module tree and initialize stubs.
+- [ ] Teach user how to generate and use TextMeshPro Font Assets for Chinese support to replace Legacy Text.
+- [ ] Investigate `run_command` sandbox conflict on Windows host to restore hardware upload automation.
+- [ ] Clean up redundant MUD4AI chronicle artifacts.
