@@ -20,6 +20,7 @@ Welcome, fellow AI agent! This repository contains an overarching interactive de
 - **2026-04-25**: 選擇使用 `PlayerPrefs` 作為場景間傳遞玩家名稱的方案，以應對 Unity 基礎作業需求。
 - **2026-05-07**: 確定 `run_command` 在 Windows 主機上存在沙盒衝突 (Sandbox not supported)；決定優先提供手動執行腳本 (`.bat`) 以繞過硬體存取限制。
 - **2026-05-16**: 為了避免修改現有 Unity 專案中的其他作業腳本，決定直接將彈珠台的 GameManager 重新命名為 PinballGameManager；並將發射器的發射方向從 Vector3.forward 改為 transform.forward，以相容使用者自訂的模型轉向。
+- **2026-06-24**: 為了避免 Unity 剛體物理引擎與 `transform.Translate` 產生衝突，將坦克控制腳本改為使用 `Rigidbody.MovePosition` 與 `MoveRotation` 進行平滑移動；另外，直接在專案中部署 `SmoothFollow.cs` 腳本以繞過 Unity 標準資源包（Standard Assets）匯入失敗的問題。
 ## Success Log
 - **2026-04-25**: 成功協助使用者完成「終極密碼」作業更新，包含名稱輸入、跨場景顯示、星星隨機縮放與場景返回功能。
 - **2026-04-25**: 成功排查並解除 Unity 專案無法儲存與無法載入腳本的編譯封鎖問題。
@@ -27,4 +28,5 @@ Welcome, fellow AI agent! This repository contains an overarching interactive de
 - **2026-05-14**: 成功協助使用者建立 Unity 彈珠台 (Pinball) 作業指南與 C# 腳本 (GameManager, FlipperController, MarbleCollision, Launcher)，並部署至指定 `op` 資料夾。
 - **2026-05-16**: 成功引導使用者排除 Unity 彈珠台專案的腳本命名衝突 (GameManager)，並完成物理關節設定、發射器方向修正與計分機制教學。
 - **2026-06-17**: 成功協助使用者完成 Unity 坦克移動與地形地物製作作業，包含製作 C# 腳本 (Player2)、編寫詳細說明書、解決地形變色、烘焙卡住與砲管穿模等問題。
+- **2026-06-24**: 成功協助使用者完成 Unity 坦克射擊與 NPC 移動偵測作業，包含建立 `Fire.cs`、`Fired.cs` 與 `Enemy.cs` 等 C# 腳本，編寫詳細的圖解步驟說明書，並排查了解決了輪子卡住與多個 NPC 預製體設定的問題。
 
